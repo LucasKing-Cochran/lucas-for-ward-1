@@ -9,89 +9,88 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Lucas King-Cochran for Ward 1</a>
+  <a href="index.html" class="nav-logo">Lucas for Ward 1</a>
   <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links">
-    <a href="about.html">About</a>
-    <a href="issues.html">Issues</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="about.html">About Me</a>
+    <a href="issues.html">My Pledges</a>
     <a href="ward-finder.html">Ward Finder</a>
-    <a href="https://instagram.com" target="_blank" class="nav-icon" aria-label="Instagram">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,0.7)" stroke="none"/></svg>
-    </a>
+    <a href="contact.html" class="active">Contact</a>
     <a href="#donate" class="nav-donate">Donate</a>
   </div>
 </nav>
 
-<div class="page-hero">
-  <div class="tag">Get in touch</div>
-  <h1>Contact Lucas</h1>
-  <p>Questions, concerns, or want to get involved? Lucas reads every message and will get back to you as soon as possible.</p>
+<div class="block block-yellow ruled-bottom">
+  <div class="pill green">Reach out</div>
+  <h1 class="big">Talk<br>To Me.</h1>
+  <p class="lead" style="margin-top:24px">I read every message personally. Whether you have a question, a concern, or you want to help — I want to hear from you.</p>
 </div>
 
-<section class="content-section white">
+<div class="block block-white ruled">
   <div class="contact-grid">
     <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <div class="form-row">
         <div class="form-group">
-          <label for="fname">First name</label>
-          <input type="text" id="fname" name="first_name" required placeholder="Jane">
+          <label>First name</label>
+          <input type="text" name="first_name" required placeholder="Jane">
         </div>
         <div class="form-group">
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="last_name" required placeholder="Smith">
+          <label>Last name</label>
+          <input type="text" name="last_name" required placeholder="Smith">
         </div>
       </div>
       <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+        <label>Email address</label>
+        <input type="email" name="email" required placeholder="jane@example.com">
       </div>
       <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required placeholder="What's on your mind?">
+        <label>Subject</label>
+        <input type="text" name="subject" required placeholder="What's on your mind?">
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Tell Lucas about your concerns, questions, or how you'd like to help..."></textarea>
+        <label>Message</label>
+        <textarea name="message" required placeholder="Tell me about your concerns, questions, or how you'd like to help..."></textarea>
       </div>
-      <div class="form-group" style="flex-direction:row;align-items:center;gap:10px">
-        <input type="checkbox" id="signup" name="signup" style="width:18px;height:18px;accent-color:var(--green)">
-        <label for="signup" style="font-size:16px;font-weight:400;color:#444;cursor:pointer">Sign me up for campaign news and updates</label>
+      <label class="form-check">
+        <input type="checkbox" name="signup">
+        Sign me up for campaign updates
+      </label>
+      <div style="margin-top:20px">
+        <button type="submit" class="btn btn-r">Send Message</button>
       </div>
-      <button type="submit" class="form-submit">Send Message</button>
     </form>
 
-    <div class="contact-sidebar">
+    <div class="contact-info">
       <div class="contact-card">
-        <h3>Email</h3>
+        <h3>Email Me</h3>
         <a href="mailto:lukekingcochran@gmail.com">lukekingcochran@gmail.com</a>
-        <p>Lucas checks his email regularly and will respond as soon as possible.</p>
+        <p>I check my email every day and will get back to you as soon as I can.</p>
       </div>
       <div class="contact-card red-card">
-        <h3>Call or text</h3>
+        <h3>Call or Text</h3>
         <a href="tel:7403319181">740-331-9181</a>
-        <p>Feel free to call or text with questions about Ward 1 or the campaign.</p>
+        <p>Feel free to call or text me directly with questions about Ward 1 or the campaign.</p>
       </div>
-      <div class="contact-card" id="donate" style="border-left-color:var(--yellow);background:var(--green)">
-        <h3 style="color:var(--yellow)">Donate to the campaign</h3>
-        <p style="color:rgba(255,255,255,0.85);font-size:17px;margin-bottom:16px">Lucas is running with no corporate funding. Every dollar goes directly toward reaching Ward 1 voters.</p>
-        <a href="https://secure.actblue.com" target="_blank" class="btn btn-red" style="font-size:14px;padding:12px 24px">Donate via ActBlue</a>
+      <div class="contact-card" id="donate" style="background:var(--G)">
+        <h3>Donate</h3>
+        <p style="font-size:18px;color:rgba(255,255,255,0.85);margin-bottom:20px">My campaign runs on people power — no corporations, no PACs. Every dollar you give goes directly toward reaching Ward 1 voters.</p>
+        <a href="https://secure.actblue.com" target="_blank" class="btn btn-r">Donate via ActBlue</a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
-  <div class="footer-info">
+  <div>
     <strong>Lucas King-Cochran for Ward 1</strong>
-    <p>Paid for by Lucas King-Cochran for Ward 1 &nbsp;·&nbsp; Ann Arbor, MI<br>
-    <a href="mailto:lukekingcochran@gmail.com">lukekingcochran@gmail.com</a></p>
+    <p>Paid for by Lucas King-Cochran for Ward 1 · Ann Arbor, MI<br>
+    <a href="mailto:lukekingcochran@gmail.com">lukekingcochran@gmail.com</a> · <a href="tel:7403319181">740-331-9181</a></p>
   </div>
-  <div class="footer-links">
+  <div class="foot-links">
     <a href="about.html">About</a>
-    <a href="issues.html">Issues</a>
+    <a href="issues.html">Pledges</a>
     <a href="ward-finder.html">Ward Finder</a>
     <a href="contact.html">Contact</a>
   </div>
